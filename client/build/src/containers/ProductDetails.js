@@ -16,7 +16,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const fetchProductDetail = async (iid) => {
     const response = await axios
-    .get(`http://165.232.190.147:5000/api/blog/${iid}`)
+         .get(`https://innovacioblockchain.com:5000/api/blog/${iid}`)
     .catch((err) => {
         console.log("Err: ", err);
       });
