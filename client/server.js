@@ -73,6 +73,14 @@ app.get('/nftGames', function (req, res) {
   res.sendFile(path.join(__dirname, '../innovacio/build', 'index.html'));
 });
 
+app.get('/blog', function (req, res) {
+  res.sendFile(path.join(__dirname, '../innovacio/build', 'index.html'));
+});
+
+app.get('/api/blog/product/:productId', function (req, res) {
+  res.sendFile(path.join(__dirname, '../innovacio/build', 'index.html'));
+});
+
 app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, '../innovacio/build', 'index.html'));
 });
