@@ -13,7 +13,7 @@ const ProductComponent = () => {
     return (<>
       <div className="four wide column" key={iid}>
 
-        <Link to={`/api/blog/product/${iid}`}>
+        <Link to={`https://innovacioblockchain.com:5000//api/blog/product/${iid}`}>
       
           <div className="carrds">
           <div className="carrds-img"><img src={image} alt={title} /></div>
