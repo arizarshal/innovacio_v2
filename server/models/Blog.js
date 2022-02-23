@@ -13,7 +13,7 @@ const BlogSchema = new mongoose.Schema({
       required: [true, 'An article must have an address link of an image '],
       trim: true
     },
-    title: {
+    heading: {
       type: String,
       required: [true, 'An article must have a title'],
       unique: false,
@@ -23,7 +23,15 @@ const BlogSchema = new mongoose.Schema({
         type: String,
         required: [true, 'An article must have a description'],
     },
-    title2: {
+    subheading1: {
+      type: String,
+      required: false,
+    },
+    description1: {
+      type: String,
+      required: [true, 'An article must have a description'],
+    },
+    subheading2: {
       type: String,
       required: false,
     },
@@ -31,19 +39,11 @@ const BlogSchema = new mongoose.Schema({
       type: String,
       required: [true, 'An article must have a description'],
     },
-    title3: {
+    subheading3: {
       type: String,
       required: false,
     },
     description3: {
-      type: String,
-      required: [true, 'An article must have a description'],
-    },
-    title4: {
-      type: String,
-      required: false,
-    },
-    description4: {
       type: String,
       required: [true, 'An article must have a description'],
     },
