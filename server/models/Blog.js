@@ -19,7 +19,7 @@ const BlogSchema = new mongoose.Schema({
       unique: false,
       trim: true
     },
-    description1: {
+    description: {
         type: String,
         required: [true, 'An article must have a description'],
     },
